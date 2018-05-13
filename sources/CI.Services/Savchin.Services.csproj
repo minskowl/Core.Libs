@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="..\..\..\Other\CITasks.targets" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A2DE3FD9-FFD3-4343-B0E6-78AEBB1BBB64}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Savchin.Services</RootNamespace>
+    <AssemblyName>Savchin.Services</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="JetBrains.Annotations">
+      <HintPath>..\Libs\JetBrains.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="LightInject, Version=3.0.2.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\LightInject.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\DebuggingTools\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Prism\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Nito.AsyncEx">
+      <HintPath>..\Libs\Nito.AsyncEx.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="Prism">
+      <HintPath>..\Libs\Prism\Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="Prism.Wpf">
+      <HintPath>..\Libs\Prism\Prism.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\SharedAssemblyVersion.cs">
+      <Link>Properties\SharedAssemblyVersion.cs</Link>
+    </Compile>
+    <Compile Include="CiPrism\CiBackgroundEventSubscription.cs" />
+    <Compile Include="CiPrism\CiDispatcherEventSubscription.cs" />
+    <Compile Include="CiPrism\CiEventSubscription.cs" />
+    <Compile Include="CiPrism\CiPubSubEvent.cs" />
+    <Compile Include="ContainerHelper.cs" />
+    <Compile Include="Core\LightInjectServiceLocator.cs" />
+    <Compile Include="ExceptionWrappingBehavior.cs" />
+    <Compile Include="Execution\ITaskRunner.cs" />
+    <Compile Include="Execution\TaskRunner.cs" />
+    <Compile Include="IColorProvider.cs" />
+    <Compile Include="IReflectionService.cs" />
+    <Compile Include="Localization\CultureInfoExtensions.cs" />
+    <Compile Include="Localization\LocalizationHelper.cs" />
+    <Compile Include="Localization\Translations.cs" />
+    <Compile Include="Logging\DataBindingLoggingBehavior.cs" />
+    <Compile Include="Logging\FinishMarker.cs" />
+    <Compile Include="Logging\InitializeMarker.cs" />
+    <Compile Include="ReflectionService.cs" />
+    <Compile Include="SecurityService.cs" />
+    <Compile Include="ServerException.cs" />
+    <Compile Include="Storage\IPathBuilderFactory.cs" />
+    <Compile Include="Storage\PathBuilderFactory.cs" />
+    <Compile Include="Storage\PathProvider.cs" />
+    <Compile Include="Storage\StorageUtility.cs" />
+    <Compile Include="SystemEnvironment\ChangeLocaleEvent.cs" />
+    <Compile Include="SystemEnvironment\CommandLineParser.cs" />
+    <Compile Include="SystemEnvironment\CommandLineSwitchAttribute.cs" />
+    <Compile Include="SystemEnvironment\CommandLineSwitchAttributesCollection.cs" />
+    <Compile Include="SystemEnvironment\EnvironmentService.cs" />
+    <Compile Include="ErrorDTO.cs" />
+    <Compile Include="Execution\IRunnable.cs" />
+    <Compile Include="Execution\TaskQueue.cs" />
+    <Compile Include="Execution\ThreadRunnableBase.cs" />
+    <Compile Include="Execution\TimerRunnableBase.cs" />
+    <Compile Include="Execution\IRequest.cs" />
+    <Compile Include="Execution\IRequestQueue.cs" />
+    <Compile Include="Execution\WaitTask.cs" />
+    <Compile Include="IBehavior.cs" />
+    <Compile Include="IDispatcher.cs" />
+    <Compile Include="Localization\ILocalizationDepended.cs" />
+    <Compile Include="Localization\ILocalizationProvider.cs" />
+    <Compile Include="Localization\ILocalizationRegistry.cs" />
+    <Compile Include="Localization\ILocalizationService.cs" />
+    <Compile Include="Localization\Language.cs" />
+    <Compile Include="Localization\LanguageInfo.cs" />
+    <Compile Include="Localization\LocalizableObject.cs" />
+    <Compile Include="Localization\Localization.cs">
+      <DependentUpon>Localization.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Localization\LocalizationChangedEvent.cs" />
+    <Compile Include="Localization\LocalizationChangingEvent.cs" />
+    <Compile Include="Localization\LocalizationLoaderBase.cs" />
+    <Compile Include="Localization\LocalizationProvider.cs" />
+    <Compile Include="Localization\LocalizationProviderBase.cs" />
+    <Compile Include="Localization\LocalizationRegistry.cs" />
+    <Compile Include="Localization\LocalizationRegistryHelper.cs" />
+    <Compile Include="Localization\LocalizationService.cs" />
+    <Compile Include="Localization\XmlLocalizationLoader.cs" />
+    <Compile Include="Logging\AndFilter.cs" />
+    <Compile Include="Logging\AppLogger.cs" />
+    <Compile Include="Logging\CsvPatternLayout.cs" />
+    <Compile Include="Logging\DebugFormatter.cs" />
+    <Compile Include="Logging\DebugLogger.cs" />
+    <Compile Include="Logging\DispatcherLogger.cs" />
+    <Compile Include="Logging\LoggerBase.cs" />
+    <Compile Include="Logging\LoggerStringFormat.cs" />
+    <Compile Include="Logging\IDebugInfoProvider.cs" />
+    <Compile Include="Logging\ILoggerService.cs" />
+    <Compile Include="Logging\LoggerService.cs" />
+    <Compile Include="Logging\Minidump.cs" />
+    <Compile Include="Logging\NamedLogger.cs" />
+    <Compile Include="Logging\NullLogger.cs" />
+    <Compile Include="Logging\ObjectSerializer.cs" />
+    <Compile Include="Module.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Execution\RequestBase.cs" />
+    <Compile Include="Core\RunnableServiceBase.cs" />
+    <Compile Include="Execution\ServerRequestBase.cs" />
+    <Compile Include="Core\ServiceBase.cs" />
+    <Compile Include="SettingsDataType.cs" />
+    <Compile Include="Settings\ISettingsService.cs" />
+    <Compile Include="Settings\SettingsService.cs" />
+    <Compile Include="Storage\AssemblySettingsFolderAttribute.cs" />
+    <Compile Include="Storage\CommonPathBuilder.cs" />
+    <Compile Include="Storage\FolderType.cs" />
+    <Compile Include="Storage\IPathBuilder.cs" />
+    <Compile Include="Storage\IStorageService.cs" />
+    <Compile Include="Storage\PathBuilder.cs" />
+    <Compile Include="Storage\StorageService.cs" />
+    <Compile Include="Storage\StorageServiceHelper.cs" />
+    <Compile Include="SystemEnvironment\IEnvironmentService.cs" />
+    <Compile Include="Time\CiDispatcherTimer.cs" />
+    <Compile Include="Time\IDispatcherTimer.cs" />
+    <Compile Include="SystemEnvironment\SwitchRecord.cs" />
+    <Compile Include="Time\ITimeService.cs" />
+    <Compile Include="Time\LocalTimeChangedEvent.cs" />
+    <Compile Include="Time\TimeService.cs" />
+    <Compile Include="Localization\LocalizableException.cs" />
+    <Compile Include="ValidateException.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Localization\CILocalization.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Localization\Localization.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Localization.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tools\Savchin.Tools.csproj">
+      <Project>{2f1807e4-39a2-4f38-adfc-6310a8443d90}</Project>
+      <Name>Savchin.Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

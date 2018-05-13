@@ -1,0 +1,40 @@
+﻿<#@ template debug="false" hostspecific="true" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".cs" #>
+<#@ assembly name="System.Xml"#>
+<#@ import namespace="System.Xml" #>
+<#@ import namespace="System.IO" #>
+
+
+
+// ReSharper disable UnusedMember.Global
+// ReSharper disable InconsistentNaming
+
+using System.Diagnostics.CodeAnalysis;
+using System.CodeDom.Compiler;
+
+namespace CI.Services.Localization.AutoGenerate
+{
+
+  [GeneratedCodeAttribute("TT", "4.0.0.0")]
+  [ExcludeFromCodeCoverageAttribute]
+  public class Localization
+  {
+<#
+			var path = this.Host.ResolvePath(@"CILocalization.xml");
+	        var doc = new XmlDocument();
+            doc.Load(path);
+
+            foreach (XmlNode element in doc.DocumentElement.ChildNodes)
+            {
+			  var id = element.Attributes["id"].Value;
+#>
+    public string <#= id#> { get; set; }
+<#
+            }
+#>
+  }
+}
