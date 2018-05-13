@@ -110,9 +110,8 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL" Condition="'$(Configuration)' == 'Debug' or '$(Configuration)' == 'Release'">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\ThrPartLibs\log4net.dll</HintPath>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
@@ -369,6 +368,7 @@
     <None Include="..\..\Other\Key.snk">
       <Link>Key.snk</Link>
     </None>
+    <None Include="packages.config" />
     <None Include="Threading\Tasks\Tasks.cd" />
   </ItemGroup>
   <ItemGroup>
