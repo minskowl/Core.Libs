@@ -110,12 +110,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="LightInject, Version=5.1.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\LightInject.5.1.3\lib\netstandard1.1\LightInject.dll</HintPath>
-    </Reference>
-    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
     <Reference Include="System" />
@@ -408,7 +402,6 @@
     <None Include="..\..\Other\Key.snk">
       <Link>Key.snk</Link>
     </None>
-    <None Include="packages.config" />
     <None Include="Threading\Tasks\Tasks.cd" />
   </ItemGroup>
   <ItemGroup>
@@ -424,6 +417,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Diagnostics\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="LightInject">
+      <Version>5.1.3</Version>
+    </PackageReference>
+    <PackageReference Include="log4net">
+      <Version>2.0.8</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

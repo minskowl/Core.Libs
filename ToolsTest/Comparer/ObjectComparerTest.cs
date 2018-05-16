@@ -47,7 +47,7 @@ namespace ToolsTest.Comparer
 
         }
         [Test]
-        [ExpectedException(typeof(ArgumentException), ExpectedMessage = "Different type objects")]
+        //[ExpectedException(typeof(ArgumentException), ExpectedMessage = "Different type objects")]
         public void DifferentTypesTest()
         {
             conf.Compare(typeof(CompareObject), GetObject(), new OtherObject());

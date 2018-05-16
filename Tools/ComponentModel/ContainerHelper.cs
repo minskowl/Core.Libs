@@ -1,5 +1,6 @@
 ﻿using LightInject;
 
+
 namespace Savchin.ComponentModel
 {
     /// <summary>
