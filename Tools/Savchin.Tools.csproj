@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -23,7 +23,7 @@
     <OldToolsVersion>3.5</OldToolsVersion>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <IsWebBootstrapper>true</IsWebBootstrapper>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
@@ -127,103 +127,20 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Collection\AlphanumComparator.cs" />
-    <Compile Include="Collection\Enumerable.cs" />
-    <Compile Include="Collection\Generic\AlphanumComparator.cs" />
-    <Compile Include="Collection\Generic\EnumerableExtensions.cs" />
-    <Compile Include="Collection\Generic\ObservableCollectionEx.cs" />
-    <Compile Include="Collection\Generic\Sorting\ComparerBuilder.cs" />
-    <Compile Include="Collection\Generic\ComparerExtensions.cs" />
-    <Compile Include="Collection\Generic\Sorting\TypeComparer.cs" />
-    <Compile Include="Collection\Generic\ThreadSafeDictionary.cs" />
-    <Compile Include="Collection\HashtableEx.cs" />
-    <Compile Include="Collection\NameValueCollectionHelper.cs" />
-    <Compile Include="Collection\Sorting\ComparerBuilder.cs" />
-    <Compile Include="Collection\Sorting\ComparerBuilderBase.cs" />
-    <Compile Include="Collection\ComparerExtensions.cs" />
-    <Compile Include="Collection\Sorting\ParserException.cs" />
-    <Compile Include="Collection\Sorting\SimpleTokenizer.cs" />
-    <Compile Include="Collection\Sorting\TypeComparer.cs" />
-    <Compile Include="CommandLine\ArgummentParser.cs" />
-    <Compile Include="CommandLine\BaseSwitch.cs" />
-    <Compile Include="CommandLine\CollectionSwitch.cs" />
-    <Compile Include="CommandLine\PropertySwitch.cs" />
-    <Compile Include="CommandLine\SwitchAttribute.cs" />
-    <Compile Include="Comparer\Attributes.cs" />
-    <Compile Include="Comparer\ComparerBase.cs" />
-    <Compile Include="Comparer\CompareResultBase.cs" />
-    <Compile Include="Comparer\Configuration.cs" />
-    <Compile Include="Comparer\DictionaryComparer.cs" />
-    <Compile Include="Comparer\DictionaryResult.cs" />
-    <Compile Include="Comparer\Filter.cs" />
-    <Compile Include="Comparer\KeyEnumerableComparer.cs" />
-    <Compile Include="Comparer\KeyEnumerableResult.cs" />
-    <Compile Include="Comparer\KeyMatcher.cs" />
-    <Compile Include="Comparer\ObjectComparer.cs" />
-    <Compile Include="Comparer\ObjectResult.cs" />
-    <Compile Include="Comparer\PrimitiveComparer.cs" />
-    <Compile Include="Comparer\PrimitiveResult.cs" />
-    <Compile Include="Comparer\ResultCollection.cs" />
-    <Compile Include="Comparer\ResultType.cs" />
-    <Compile Include="ComponentModel\BaseObject.cs" />
-    <Compile Include="ComponentModel\ContainerHelper.cs" />
-    <Compile Include="ComponentModel\DisplayNameExAttribute.cs" />
-    <Compile Include="ComponentModel\ICompositeObject.cs" />
-    <Compile Include="ComponentModel\IDirtyTracker.cs" />
-    <Compile Include="ComponentModel\IModelAdapter.cs" />
-    <Compile Include="ComponentModel\ItemModel.cs" />
-    <Compile Include="ComponentModel\ObjectBase.cs" />
-    <Compile Include="ComponentModel\ServiceLocator.cs" />
     <Compile Include="Configuration\ConfigurationBase.cs" />
     <Compile Include="Configuration\ConfigurationCollection.cs" />
     <Compile Include="Configuration\DataFile.cs" />
     <Compile Include="Configuration\DataFileCollection.cs" />
-    <Compile Include="Collection\Generic\DictionaryEx.cs" />
-    <Compile Include="Core\DecimalHelper.cs" />
-    <Compile Include="Core\Fusion.cs" />
-    <Compile Include="Core\ICopiable.cs" />
-    <Compile Include="Core\MemberInfoHelper.cs" />
-    <Compile Include="Core\NameValuePair.cs" />
-    <Compile Include="Core\Pair.cs" />
-    <Compile Include="Core\PropertyName.cs" />
-    <Compile Include="Core\Reflected.cs" />
+    <Compile Include="ServiceModel\CommunicationObjectHolder.cs" />
+    <Compile Include="ServiceModel\CompressListener.cs" />
+    <Compile Include="ServiceModel\NetworkException.cs" />
+    <Compile Include="ServiceModel\ServerException.cs" />
+    <Compile Include="ServiceModel\ServiceEndpointConfigurationHelper.cs" />
+    <Compile Include="ServiceModel\ServiceExceptionConverter.cs" />
+    <Compile Include="ServiceModel\ServiceInvoker.cs" />
     <Compile Include="Xml\XmlSerialaizerHelper.cs" />
     <Compile Include="Crypto\Rsa.cs" />
-    <Compile Include="Core\AppInfo.cs" />
-    <Compile Include="Csv\CachedCsvReader.cs" />
-    <Compile Include="Csv\CachedCsvReader.CsvBindingList.cs" />
-    <Compile Include="Csv\CachedCsvReader.CsvPropertyDescriptor.cs" />
-    <Compile Include="Csv\CachedCsvReader.CsvRecordComparer.cs" />
-    <Compile Include="Csv\CsvFile.cs" />
-    <Compile Include="Csv\CsvReader.cs" />
-    <Compile Include="Csv\CsvReader.DataReaderValidations.cs" />
-    <Compile Include="Csv\CsvReader.RecordEnumerator.cs" />
-    <Compile Include="Csv\CsvWriter.cs" />
-    <Compile Include="Csv\ExceptionMessage.Designer.cs" />
-    <Compile Include="Csv\MalformedCsvException.cs" />
-    <Compile Include="Csv\MissingFieldAction.cs" />
-    <Compile Include="Csv\MissingFieldCsvException.cs" />
-    <Compile Include="Csv\ParseErrorAction.cs" />
-    <Compile Include="Csv\ParseErrorEventArgs.cs" />
-    <Compile Include="Development\AppContext.cs" />
-    <Compile Include="Development\BaseObjectProvider.cs" />
-    <Compile Include="Development\IApplicationObjectsProvider.cs" />
-    <Compile Include="Development\ISession.cs" />
-    <Compile Include="Development\MultiThreadProvider.cs" />
-    <Compile Include="Development\SimpleSession.cs" />
-    <Compile Include="Development\SingleThreadProvider.cs" />
     <Compile Include="Drawing\ImageHelper.cs" />
-    <Compile Include="Interfaces\IContainer.cs" />
-    <Compile Include="Interfaces\IDirectoryManager.cs" />
-    <Compile Include="Interfaces\IFileManager.cs" />
-    <Compile Include="Interfaces\IFileSystem.cs" />
-    <Compile Include="Interfaces\IPathManager.cs" />
-    <Compile Include="IO\Compressor.cs" />
-    <Compile Include="IO\CopositeTextWriter.cs" />
-    <Compile Include="IO\FileHelper.cs" />
-    <Compile Include="IO\Mime.cs" />
-    <Compile Include="IO\StreamHelper.cs" />
-    <Compile Include="IO\TemporaryFile.cs" />
     <Compile Include="Linq\Dynamic\Core\ClassFactory.cs" />
     <Compile Include="Linq\Dynamic\Core\ExpressionParser.Types.cs" />
     <Compile Include="Linq\Dynamic\DynamicClass.cs" />
@@ -234,66 +151,6 @@
     <Compile Include="Linq\Dynamic\Core\ExpressionParser.cs" />
     <Compile Include="Linq\Dynamic\ParseException.cs" />
     <Compile Include="Linq\Dynamic\Core\Signature.cs" />
-    <Compile Include="Logging\IDebugInfoProvider.cs" />
-    <Compile Include="Logging\ILogger.cs" />
-    <Compile Include="Logging\LoggerLog4Net.cs" />
-    <Compile Include="Logging\LoggerStringFormat.cs" />
-    <Compile Include="Logging\LogWriter.cs" />
-    <Compile Include="Logging\NullLoger.cs" />
-    <Compile Include="Logging\ObjectSerializer.cs" />
-    <Compile Include="Logging\Severity.cs" />
-    <Compile Include="Monads\Actions.cs" />
-    <Compile Include="Monads\ArgumentCheck.cs" />
-    <Compile Include="Monads\Events.cs" />
-    <Compile Include="Monads\MaybeIDictionary.cs" />
-    <Compile Include="Monads\MaybeIEnumerable.cs" />
-    <Compile Include="Monads\MaybeNullable.cs" />
-    <Compile Include="Monads\MaybeObjects.cs" />
-    <Compile Include="ServiceModel\CommunicationObjectHolder.cs" />
-    <Compile Include="ServiceModel\CompressListener.cs" />
-    <Compile Include="ServiceModel\NetworkException.cs" />
-    <Compile Include="ServiceModel\ServerException.cs" />
-    <Compile Include="ServiceModel\ServiceEndpointConfigurationHelper.cs" />
-    <Compile Include="ServiceModel\ServiceExceptionConverter.cs" />
-    <Compile Include="ServiceModel\ServiceInvoker.cs" />
-    <Compile Include="SystemEnvironment\DomainInfo.cs" />
-    <Compile Include="SystemEnvironment\ErrorReport.cs" />
-    <Compile Include="SystemEnvironment\HardwareInfo.cs" />
-    <Compile Include="Text\AdvancedString.cs" />
-    <Compile Include="Text\ResourceStringLoader.cs" />
-    <Compile Include="Text\Wildcard.cs" />
-    <Compile Include="Validation\Validators\RangeValidator.cs" />
-    <Compile Include="Validation\ErrorCollection.cs" />
-    <Compile Include="Validation\Resources.Designer.cs">
-      <DependentUpon>Resources.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="Validation\Resources.ru.Designer.cs">
-      <DependentUpon>Resources.ru.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="SystemEnvironment\EnvironmentInfo.cs" />
-    <Compile Include="SystemEnvironment\FrameworksCollection.cs" />
-    <Compile Include="Core\IRange.cs" />
-    <Compile Include="SystemEnvironment\OperatingSystemInfo.cs" />
-    <Compile Include="Core\Range.cs" />
-    <Compile Include="Core\TypeHelper.cs" />
-    <Compile Include="SystemEnvironment\WindowsVersion.cs" />
-    <Compile Include="Collection\Generic\SortableBindingList.cs" />
-    <Compile Include="ComponentModel\DynamicPropertyFilterAttribute.cs" />
-    <Compile Include="ComponentModel\EnumTypeConverter.cs" />
-    <Compile Include="ComponentModel\FilterablePropertyType.cs" />
-    <Compile Include="Core\Variable.cs" />
-    <Compile Include="TimeManagment\Time.cs" />
-    <Compile Include="TimeManagment\TimeRange.cs" />
-    <Compile Include="Net\FtpClient.cs" />
-    <Compile Include="Net\FtpSocketClient.cs" />
-    <Compile Include="Net\FtpException.cs" />
-    <Compile Include="Net\GenericCredential.cs" />
-    <Compile Include="Net\GenericProxy.cs" />
-    <Compile Include="Net\InternetSettings.cs" />
     <Compile Include="Threading\async.cs" />
     <Compile Include="Threading\IOCP\Node.cs" />
     <Compile Include="Threading\Tasks\AsyncDelegateTask.cs" />
@@ -312,19 +169,6 @@
     <Compile Include="Threading\waitableasync.cs" />
     <Compile Include="Threading\Tasks\WaitableAsyncDelegateTask.cs" />
     <Compile Include="Threading\Tasks\WaitableGenericTask.cs" />
-    <Compile Include="Validation\Validators\TypeValidator.cs" />
-    <Compile Include="Validation\Validators\IValidator.cs" />
-    <Compile Include="Validation\Validators\RegexValidator.cs" />
-    <Compile Include="Validation\Validators\RequiredFieldValidator.cs" />
-    <Compile Include="Validation\Validators\ValidatorBase.cs" />
-    <Compile Include="TimeManagment\DatePart.cs" />
-    <Compile Include="TimeManagment\DatePartSpan.cs" />
-    <Compile Include="TimeManagment\DateRange.cs" />
-    <Compile Include="TimeManagment\DateTimeEx.cs" />
-    <Compile Include="TimeManagment\DateTimeUtils.cs" />
-    <Compile Include="TimeManagment\TimeZoneCollection.cs" />
-    <Compile Include="TimeManagment\TimeZoneManager.cs" />
-    <Compile Include="TimeManagment\UITimeZone.cs" />
     <Compile Include="Drawing\ConverterColor.cs" />
     <Compile Include="Drawing\HSBColor.cs" />
     <Compile Include="Ini\IniDocument.cs" />
@@ -337,38 +181,10 @@
     <Compile Include="Ini\Util\ArgvParser.cs" />
     <Compile Include="Ini\Util\OrderedList.cs" />
     <Compile Include="Ini\Util\OrderedListEnumerator.cs" />
-    <Compile Include="IO\CommandLineParser.cs" />
-    <Compile Include="IO\CommandLineSwitchAttribute.cs" />
-    <Compile Include="IO\DirectoryHelper.cs" />
-    <Compile Include="IO\IOHelper.cs" />
-    <Compile Include="IO\PathHelper.cs" />
-    <Compile Include="IO\StorageSize.cs" />
-    <Compile Include="IO\SwitchRecord.cs" />
     <Compile Include="Mp3\id3.cs">
     </Compile>
     <Compile Include="Mp3\Mp3Tool.cs" />
-    <Compile Include="Core\EnumHelper.cs" />
-    <Compile Include="Core\RegistryHelper.cs" />
-    <Compile Include="IO\StreamPipe.cs" />
-    <Compile Include="Core\TypeSerializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Collection\Generic\BiDictionary.cs" />
-    <Compile Include="Collection\Generic\CollectionUtil.cs" />
-    <Compile Include="Core\Randomizer.cs" />
-    <Compile Include="Text\RegularExpressions.cs" />
-    <Compile Include="Text\StringUtil.cs" />
-    <Compile Include="Validation\IValidationValidator.cs" />
-    <Compile Include="Validation\ObjectValidator.cs" />
-    <Compile Include="Validation\IValidatable.cs" />
-    <Compile Include="Validation\Attributes\RangeValidationAttribute.cs" />
-    <Compile Include="Validation\Attributes\RegularExpressionValidationAttribute.cs" />
-    <Compile Include="Validation\Attributes\RequiredFieldValidationAttribute.cs" />
-    <Compile Include="Validation\Attributes\ValidationAttribute.cs" />
-    <Compile Include="Validation\ValidationError.cs" />
-    <Compile Include="Validation\ValidationException.cs" />
-    <Compile Include="Net\DownloadException.cs" />
-    <Compile Include="Net\PageDownloader.cs" />
-    <Compile Include="Validation\Validators\ValidatorsCollection.cs" />
     <Compile Include="Xml\AssemblyGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -404,20 +220,7 @@
     </None>
     <None Include="Threading\Tasks\Tasks.cd" />
   </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Csv\ExceptionMessage.resx" />
-    <EmbeddedResource Include="Validation\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Validation\Resources.ru.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.ru.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Diagnostics\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <PackageReference Include="LightInject">
       <Version>5.1.3</Version>
@@ -425,6 +228,12 @@
     <PackageReference Include="log4net">
       <Version>2.0.8</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sav.Core\Sav.Core.csproj">
+      <Project>{35568da6-594b-4f5f-a6cf-24b47d0c02b1}</Project>
+      <Name>Sav.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
