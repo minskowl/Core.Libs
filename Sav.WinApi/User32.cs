@@ -2,9 +2,7 @@ using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Text;
-using System.Windows.Forms;
 using Savchin.WinApi.Enums;
-using Savchin.WinApi.Shell;
 
 namespace Savchin.WinApi
 {

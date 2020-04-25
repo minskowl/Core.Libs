@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -15,7 +15,7 @@
     <OldToolsVersion>3.5</OldToolsVersion>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -83,9 +83,9 @@
     <Compile Include="SystemEnvironment\EnviromentInfoTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Savchin.WinApi\Savchin.WinApi.csproj">
-      <Project>{DD712413-B47A-4707-A45D-84F786E47BAF}</Project>
-      <Name>Savchin.WinApi</Name>
+    <ProjectReference Include="..\Sav.Core\Sav.Core.csproj">
+      <Project>{35568da6-594b-4f5f-a6cf-24b47d0c02b1}</Project>
+      <Name>Sav.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\Tools\Savchin.Tools.csproj">
       <Project>{2F1807E4-39A2-4F38-ADFC-6310A8443D90}</Project>

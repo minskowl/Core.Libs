@@ -107,10 +107,10 @@ namespace Savchin.WinApi.Shell
                 {
                     return Registry.CurrentUser;
                 }
-                if (rh == RegistryHive.DynData)
-                {
-                    return Registry.DynData;
-                }
+                //if (rh == RegistryHive.DynData)
+                //{
+                //    return Registry.DynData;
+                //}
                 if (rh == RegistryHive.LocalMachine)
                 {
                     return Registry.LocalMachine;

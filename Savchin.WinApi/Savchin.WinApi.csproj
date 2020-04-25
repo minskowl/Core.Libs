@@ -70,89 +70,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Advapi32.cs" />
-    <Compile Include="CFunctionPointer.cs" />
-    <Compile Include="ControlFinder.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Delegates.cs" />
-    <Compile Include="Diagnostics\MiniDump.cs" />
-    <Compile Include="Enums\Enums.cs" />
-    <Compile Include="Enums\WH.cs" />
-    <Compile Include="Enums\WindowShowStyle.cs" />
-    <Compile Include="Enums\WindowStyles.cs" />
-    <Compile Include="Enums\WM.cs" />
-    <Compile Include="GDI32.cs" />
-    <Compile Include="HRESULT.cs" />
-    <Compile Include="OleStorage\API.cs" />
-    <Compile Include="OleStorage\Information.cs" />
-    <Compile Include="OleStorage\IPropertyStorage.cs" />
-    <Compile Include="OleStorage\IStorage.cs" />
-    <Compile Include="OleStorage\IStream.cs" />
-    <Compile Include="OleStorage\PropertySetStorage.cs" />
-    <Compile Include="OleStorage\PropertyStorage.cs" />
-    <Compile Include="OleStorage\PROPVARIANT.cs" />
-    <Compile Include="OleStorage\Storage.cs" />
-    <Compile Include="OleStorage\Stream.cs" />
-    <Compile Include="OleStorage\Variant.cs" />
-    <Compile Include="RECT.cs" />
     <Compile Include="Resource.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource.resx</DependentUpon>
     </Compile>
-    <Compile Include="ScreenCapturer.cs" />
-    <Compile Include="Security\Impersonator.cs" />
-    <Compile Include="Shell\Comctl32.cs" />
-    <Compile Include="Shell\ContextMenuExtension.cs" />
-    <Compile Include="Shell\Enums.cs" />
-    <Compile Include="Shell\ExecuteItemEventArgs.cs" />
-    <Compile Include="Shell\ExtensionInstaller.cs" />
-    <Compile Include="Shell\EZSDrawItemEventArgs.cs" />
-    <Compile Include="Shell\EZSMeasureItemEventArgs.cs" />
-    <Compile Include="Shell\GetMenuitemsEventArgs.cs" />
-    <Compile Include="Shell\HChangeNotifyEventID.cs" />
-    <Compile Include="Shell\Interfaces.cs" />
-    <Compile Include="Shell\IOleDataObject.cs" />
-    <Compile Include="Shell\PropertySheetExtension.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Shell\PROPSHEETPAGE.cs" />
-    <Compile Include="Shell\RegistryKeyNameAttribute.cs" />
-    <Compile Include="Shell\Shell32.cs" />
-    <Compile Include="Shell\ShellMenu.cs" />
-    <Compile Include="Shell\ShellMenuItem.cs" />
-    <Compile Include="Shell\Structs.cs" />
-    <Compile Include="Shell\TargetExtensionAttribute.cs" />
-    <Compile Include="Shell\x0bdae4f1006d9d27.cs" />
-    <Compile Include="Shell\x443cc432acaadb1d.cs" />
-    <Compile Include="Shell\xbfcc67b4a8919b21.cs" />
-    <Compile Include="Windows\FileDialogs\FileDialog.cs" />
-    <Compile Include="FormComponentEventArgs.cs" />
-    <Compile Include="Kernel32.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Structs.cs" />
-    <Compile Include="User32.cs" />
-    <Compile Include="UserActivity\GlobalEventProvider.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="UserActivity\HookManager.Callbacks.cs" />
-    <Compile Include="UserActivity\HookManager.cs" />
-    <Compile Include="UserActivity\MouseEventExtArgs.cs" />
-    <Compile Include="Win32.cs" />
-    <Compile Include="Windows\FileDialogs\FileDialogWatcher.cs" />
-    <Compile Include="Windows\FileDialogs\OpenFileDialog.cs" />
-    <Compile Include="Windows\FileDialogs\OpenFileDialogWatcher.cs" />
-    <Compile Include="Windows\FileDialogs\SaveFileDialog.cs" />
-    <Compile Include="Windows\FileDialogs\SaveFileDialogWatcher.cs" />
-    <Compile Include="Windows\MessageBox.cs" />
-    <Compile Include="Windows\MessageBoxWatcher.cs" />
-    <Compile Include="Windows\WinButton.cs" />
-    <Compile Include="Windows\Window.cs" />
-    <Compile Include="Windows\WindowFinder.cs" />
-    <Compile Include="Windows\WindowHandle.cs" />
-    <Compile Include="Windows\WindowManager.cs" />
-    <Compile Include="Windows\WindowWatcher.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -182,7 +105,9 @@
       <Link>Key.snk</Link>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Security\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>

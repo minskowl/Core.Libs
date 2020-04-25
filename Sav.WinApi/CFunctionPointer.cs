@@ -237,7 +237,8 @@ namespace Savchin.WinApi
             AppDomain ad = Thread.GetDomain();
             AssemblyName asmn = new AssemblyName();
             asmn.Name = "CFctPtr-" + Guid.NewGuid();
-            AssemblyBuilder asmb = ad.DefineDynamicAssembly(asmn,
+          
+            AssemblyBuilder asmb = AssemblyBuilder.DefineDynamicAssembly(asmn,
                                                             AssemblyBuilderAccess.Run);
             ModuleBuilder modb = asmb.DefineDynamicModule("MainMod");
             TypeBuilder typb = modb.DefineType("CFctPtrImpl",
