@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2024
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{94E5F457-3256-49EF-A74F-E434AE314E7A}"
 EndProject
@@ -23,6 +23,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTest", "DataTest\DataTest.csproj", "{C3D071F1-8A55-4B7B-9D93-9D9AD419A9C8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Savchin.Services", "CI.Services\Savchin.Services.csproj", "{A2DE3FD9-FFD3-4343-B0E6-78AEBB1BBB64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sav.Core", "Sav.Core\Sav.Core.csproj", "{35568DA6-594B-4F5F-A6CF-24B47D0C02B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -168,6 +170,30 @@ Global
 		{A2DE3FD9-FFD3-4343-B0E6-78AEBB1BBB64}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A2DE3FD9-FFD3-4343-B0E6-78AEBB1BBB64}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{A2DE3FD9-FFD3-4343-B0E6-78AEBB1BBB64}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{35568DA6-594B-4F5F-A6CF-24B47D0C02B1}.Client Debug|.NET.ActiveCfg = Debug|Any CPU
+		{35568DA6-594B-4F5F-A6CF-24B47D0C02B1}.Client Debug|.NET.Build.0 = Debug|Any CPU
+		{35568DA6-594B-4F5F-A6CF-24B47D0C02B1}.Client Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35568DA6-594B-4F5F-A6CF-24B47D0C02B1}.Client Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35568DA6-594B-4F5F-A6CF-24B47D0C02B1}.Client Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{35568DA6-594B-4F5F-A6CF-24B47D0C02B1}.Client Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{35568DA6-594B-4F5F-A6CF-24B47D0C02B1}.Client Release|.NET.ActiveCfg = Release|Any CPU
+		{35568DA6-594B-4F5F-A6CF-24B47D0C02B1}.Client Release|.NET.Build.0 = Release|Any CPU
+		{35568DA6-594B-4F5F-A6CF-24B47D0C02B1}.Client Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35568DA6-594B-4F5F-A6CF-24B47D0C02B1}.Client Release|Any CPU.Build.0 = Release|Any CPU
+		{35568DA6-594B-4F5F-A6CF-24B47D0C02B1}.Client Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{35568DA6-594B-4F5F-A6CF-24B47D0C02B1}.Client Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{35568DA6-594B-4F5F-A6CF-24B47D0C02B1}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{35568DA6-594B-4F5F-A6CF-24B47D0C02B1}.Debug|.NET.Build.0 = Debug|Any CPU
+		{35568DA6-594B-4F5F-A6CF-24B47D0C02B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35568DA6-594B-4F5F-A6CF-24B47D0C02B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35568DA6-594B-4F5F-A6CF-24B47D0C02B1}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{35568DA6-594B-4F5F-A6CF-24B47D0C02B1}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{35568DA6-594B-4F5F-A6CF-24B47D0C02B1}.Release|.NET.ActiveCfg = Release|Any CPU
+		{35568DA6-594B-4F5F-A6CF-24B47D0C02B1}.Release|.NET.Build.0 = Release|Any CPU
+		{35568DA6-594B-4F5F-A6CF-24B47D0C02B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35568DA6-594B-4F5F-A6CF-24B47D0C02B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35568DA6-594B-4F5F-A6CF-24B47D0C02B1}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{35568DA6-594B-4F5F-A6CF-24B47D0C02B1}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
