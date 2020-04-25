@@ -28,6 +28,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Standart", "Standart", "{43
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sav.WinApi", "Sav.WinApi\Sav.WinApi.csproj", "{0D3E833F-0E87-46F4-96F9-A7FC5126B5DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sav.Forms", "Sav.Forms\Sav.Forms.csproj", "{98AC2BED-80A3-49EA-A4B1-A67B44B7DAF0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Client Debug|.NET = Client Debug|.NET
@@ -200,6 +202,30 @@ Global
 		{0D3E833F-0E87-46F4-96F9-A7FC5126B5DF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0D3E833F-0E87-46F4-96F9-A7FC5126B5DF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{0D3E833F-0E87-46F4-96F9-A7FC5126B5DF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{98AC2BED-80A3-49EA-A4B1-A67B44B7DAF0}.Client Debug|.NET.ActiveCfg = Debug|Any CPU
+		{98AC2BED-80A3-49EA-A4B1-A67B44B7DAF0}.Client Debug|.NET.Build.0 = Debug|Any CPU
+		{98AC2BED-80A3-49EA-A4B1-A67B44B7DAF0}.Client Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98AC2BED-80A3-49EA-A4B1-A67B44B7DAF0}.Client Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98AC2BED-80A3-49EA-A4B1-A67B44B7DAF0}.Client Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{98AC2BED-80A3-49EA-A4B1-A67B44B7DAF0}.Client Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{98AC2BED-80A3-49EA-A4B1-A67B44B7DAF0}.Client Release|.NET.ActiveCfg = Release|Any CPU
+		{98AC2BED-80A3-49EA-A4B1-A67B44B7DAF0}.Client Release|.NET.Build.0 = Release|Any CPU
+		{98AC2BED-80A3-49EA-A4B1-A67B44B7DAF0}.Client Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98AC2BED-80A3-49EA-A4B1-A67B44B7DAF0}.Client Release|Any CPU.Build.0 = Release|Any CPU
+		{98AC2BED-80A3-49EA-A4B1-A67B44B7DAF0}.Client Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{98AC2BED-80A3-49EA-A4B1-A67B44B7DAF0}.Client Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{98AC2BED-80A3-49EA-A4B1-A67B44B7DAF0}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{98AC2BED-80A3-49EA-A4B1-A67B44B7DAF0}.Debug|.NET.Build.0 = Debug|Any CPU
+		{98AC2BED-80A3-49EA-A4B1-A67B44B7DAF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98AC2BED-80A3-49EA-A4B1-A67B44B7DAF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98AC2BED-80A3-49EA-A4B1-A67B44B7DAF0}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{98AC2BED-80A3-49EA-A4B1-A67B44B7DAF0}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{98AC2BED-80A3-49EA-A4B1-A67B44B7DAF0}.Release|.NET.ActiveCfg = Release|Any CPU
+		{98AC2BED-80A3-49EA-A4B1-A67B44B7DAF0}.Release|.NET.Build.0 = Release|Any CPU
+		{98AC2BED-80A3-49EA-A4B1-A67B44B7DAF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98AC2BED-80A3-49EA-A4B1-A67B44B7DAF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98AC2BED-80A3-49EA-A4B1-A67B44B7DAF0}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{98AC2BED-80A3-49EA-A4B1-A67B44B7DAF0}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -209,6 +235,7 @@ Global
 		{C3D071F1-8A55-4B7B-9D93-9D9AD419A9C8} = {94E5F457-3256-49EF-A74F-E434AE314E7A}
 		{35568DA6-594B-4F5F-A6CF-24B47D0C02B1} = {439C636D-E482-4E01-9935-962D89563059}
 		{0D3E833F-0E87-46F4-96F9-A7FC5126B5DF} = {439C636D-E482-4E01-9935-962D89563059}
+		{98AC2BED-80A3-49EA-A4B1-A67B44B7DAF0} = {439C636D-E482-4E01-9935-962D89563059}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6ED61012-EDE6-4FE5-85F8-11543FADC7DD}

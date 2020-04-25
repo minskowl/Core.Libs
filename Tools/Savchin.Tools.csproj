@@ -140,7 +140,6 @@
     <Compile Include="ServiceModel\ServiceInvoker.cs" />
     <Compile Include="Xml\XmlSerialaizerHelper.cs" />
     <Compile Include="Crypto\Rsa.cs" />
-    <Compile Include="Drawing\ImageHelper.cs" />
     <Compile Include="Linq\Dynamic\Core\ClassFactory.cs" />
     <Compile Include="Linq\Dynamic\Core\ExpressionParser.Types.cs" />
     <Compile Include="Linq\Dynamic\DynamicClass.cs" />
@@ -169,8 +168,6 @@
     <Compile Include="Threading\waitableasync.cs" />
     <Compile Include="Threading\Tasks\WaitableAsyncDelegateTask.cs" />
     <Compile Include="Threading\Tasks\WaitableGenericTask.cs" />
-    <Compile Include="Drawing\ConverterColor.cs" />
-    <Compile Include="Drawing\HSBColor.cs" />
     <Compile Include="Ini\IniDocument.cs" />
     <Compile Include="Ini\IniException.cs" />
     <Compile Include="Ini\IniItem.cs" />

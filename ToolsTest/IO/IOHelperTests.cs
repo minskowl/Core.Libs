@@ -7,7 +7,7 @@ using System.Security.Principal;
 using System.Text;
 using NUnit.Framework;
 using Savchin.IO;
-using Savchin.WinApi;
+
 
 namespace ToolsTest.IO
 {
@@ -38,19 +38,19 @@ namespace ToolsTest.IO
 
         }
 
-        [Test]
-        public void Kernel32tEST()
-        {
-            var size = Kernel32.GetFileSize("D:\\Install");
-            if(size==-1)
-            {
-                var ex=Win32.GetLastWin32Error();
-                Console.WriteLine(ex);
-            }
-            else
-            {
-                Console.WriteLine(size);
-            }
-        }
+        //[Test]
+        //public void Kernel32tEST()
+        //{
+        //    var size = Kernel32.GetFileSize("D:\\Install");
+        //    if(size==-1)
+        //    {
+        //        var ex=Win32.GetLastWin32Error();
+        //        Console.WriteLine(ex);
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine(size);
+        //    }
+        //}
     }
 }
