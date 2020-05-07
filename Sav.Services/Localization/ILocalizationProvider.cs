@@ -114,13 +114,13 @@ namespace Savchin.Services.Localization
         /// </value>
         int CultureId { get; }
 
-        /// <summary>
-        /// Gets the flow direction.
-        /// </summary>
-        /// <value>
-        /// The flow direction.
-        /// </value>
-        FlowDirection FlowDirection { get; }
+        ///// <summary>
+        ///// Gets the flow direction.
+        ///// </summary>
+        ///// <value>
+        ///// The flow direction.
+        ///// </value>
+        //FlowDirection FlowDirection { get; }
 
         /// <summary>
         /// Gets the LTR marked string.

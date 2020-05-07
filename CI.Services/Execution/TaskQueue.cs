@@ -4,11 +4,6 @@ using System.Threading;
 
 namespace Savchin.Services.Execution
 {
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1711:IdentifiersShouldNotHaveIncorrectSuffix")]
-    public interface ITaskQueue : IRequestQueue
-    {
-
-    }
 
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1711:IdentifiersShouldNotHaveIncorrectSuffix")]
     public sealed class TaskQueue : ITaskQueue, IDisposable

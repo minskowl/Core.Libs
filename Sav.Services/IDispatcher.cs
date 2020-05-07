@@ -1,19 +1,19 @@
 ﻿using System;
-using System.Windows.Threading;
+
 
 namespace Savchin.Services
 {
     public interface IDispatcher
     {
 
-        /// <summary>
-        /// Begins the invoke.
-        /// </summary>
-        /// <param name="method">The method.</param>
-        /// <param name="priority">The priority.</param>
-        /// <param name="arg">The argument.</param>
-        DispatcherOperation BeginInvoke(Delegate method, DispatcherPriority priority, params object[] arg);
-
+        ///// <summary>
+        ///// Begins the invoke.
+        ///// </summary>
+        ///// <param name="method">The method.</param>
+        ///// <param name="priority">The priority.</param>
+        ///// <param name="arg">The argument.</param>
+        //DispatcherOperation BeginInvoke(Delegate method, DispatcherPriority priority, params object[] arg);
+        void BeginInvoke(Delegate method);
         /// <summary>
         /// Begins the invoke.
         /// </summary>
@@ -29,27 +29,22 @@ namespace Savchin.Services
         /// <returns></returns>
         TResult Invoke<TResult>(Func<TResult> callback);
 
-        /// <summary>
-        /// Begins the invoke.
-        /// </summary>
-        /// <param name="method">The method.</param>
-        DispatcherOperation BeginInvoke(Action method);
+        ///// <summary>
+        ///// Begins the invoke.
+        ///// </summary>
+        ///// <param name="method">The method.</param>
+        //DispatcherOperation BeginInvoke(Action method);
 
-        /// <summary>
-        /// Occurs when [operation posted].
-        /// </summary>
-        event DispatcherHookEventHandler OperationPosted;
+        ///// <summary>
+        ///// Occurs when [operation posted].
+        ///// </summary>
+        //event DispatcherHookEventHandler OperationPosted;
 
-        /// <summary>
-        /// Occurs when [operation aborted].
-        /// </summary>
-        event DispatcherHookEventHandler OperationAborted;
+        ///// <summary>
+        ///// Occurs when [operation aborted].
+        ///// </summary>
+        //event DispatcherHookEventHandler OperationAborted;
 
-
-        /// <summary>
-        /// Occurs when [operation completed].
-        /// </summary>
-        event DispatcherHookEventHandler OperationCompleted;
 
 
         /// <summary>

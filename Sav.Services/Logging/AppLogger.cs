@@ -23,26 +23,18 @@ namespace Savchin.Services.Logging
         static AppLogger()
         {
             Environment.SetEnvironmentVariable("APPLOGS", PathProvider.LogsFolderPath);
-            XmlConfigurator.Configure();
+            //XmlConfigurator.Configure();
         }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="AppLogger"/> class.
         /// </summary>
         public AppLogger()
-            : base("App")
+            : base(typeof(AppLogger))
         {
         }
 
-        /// <summary>
-        /// Initializes a new instance of the <see cref="AppLogger"/> class.
-        /// </summary>
-        /// <param name="name">The name.</param>
-        public AppLogger(string name)
-            : base(name)
-        {
-
-        }
+      
 
     }
 

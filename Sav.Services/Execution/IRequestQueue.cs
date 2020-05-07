@@ -6,6 +6,12 @@
         Normal = 1,
         High = 2
     }
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1711:IdentifiersShouldNotHaveIncorrectSuffix")]
+    public interface ITaskQueue : IRequestQueue
+    {
+
+    }
+
 
     /// <summary>
     /// Defines interface for message queue

@@ -18,7 +18,7 @@ namespace Savchin.Services.Localization
         /// Initializes a new instance of the <see cref="XmlLocalizationLoader"/> class.
         /// </summary>
         public XmlLocalizationLoader()
-            : this(typeof(XmlLocalizationLoader).Assembly, ".Localization.CILocalization.xml", typeof(Localization))
+            : this(typeof(XmlLocalizationLoader).Assembly, ".Localization.CILocalization.xml", typeof(CI.Services.Localization.AutoGenerate.Localization))
         {
 
         }

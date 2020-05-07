@@ -13,10 +13,7 @@ namespace Savchin.Services.Logging
         /// Initializes a new instance of the <see cref="AppLogger"/> class.
         /// </summary>
         public DispatcherLogger()
-            : base("Dispatcher")
-        {
-        }
-        public DispatcherLogger(string name) : base(name)
+            : base(typeof(DispatcherLogger))
         {
         }
     }

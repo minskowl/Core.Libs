@@ -14,16 +14,9 @@ namespace Savchin.Services.Logging
         /// Initializes a new instance of the <see cref="DebugLogger"/> class.
         /// </summary>
         public DebugLogger()
-            : base("Debug")
+            : base(typeof(DebugLogger))
         {
         }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="DebugLogger"/> class.
-        /// </summary>
-        /// <param name="name">The name.</param>
-        public DebugLogger(string name)
-            : base(name)
-        {
-        }
+    
     }
 }

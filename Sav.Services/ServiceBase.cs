@@ -16,14 +16,6 @@ namespace Savchin.Services.Core
             Logger = logger;
         }
 
-        /// <summary>
-        /// Called when [error].
-        /// </summary>
-        /// <param name="obj">The obj.</param>
-        protected virtual void OnError(ErrorDTO obj)
-        {
-            Logger.Warning(obj.BuildDetails());
-        }
 
         /// <summary>
         /// Called when [error].

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
 using System.Windows;
-using JetBrains.Annotations;
 using Savchin.ComponentModel;
 using Savchin.Core;
 
@@ -46,13 +46,6 @@ namespace Savchin.Services.Localization
         /// </value>
         public int CultureId { get; }
 
-        /// <summary>
-        /// Gets the flow direction.
-        /// </summary>
-        /// <value>
-        /// The flow direction.
-        /// </value>
-        public FlowDirection FlowDirection { get; }
 
         /// <summary>
         /// Gets the name of the language.
@@ -87,7 +80,7 @@ namespace Savchin.Services.Localization
             LanguageName = Culture.GetShortNativeName();
             Resources = resources;
             CultureId = cultureId;
-            FlowDirection = culture.TextInfo.IsRightToLeft ? FlowDirection.RightToLeft : FlowDirection.LeftToRight;
+
         }
 
         #endregion Construction

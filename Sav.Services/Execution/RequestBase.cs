@@ -106,7 +106,7 @@ namespace Savchin.Services.Execution
         /// Gets or sets the on error action.
         /// </summary>
         /// <value>The on error action.</value>
-        public Action<ErrorDTO> OnError { get; set; }
+        public Action<Exception> OnError { get; set; }
 
         private bool NeedDispatch
         {
@@ -168,31 +168,11 @@ namespace Savchin.Services.Execution
         {
             Logger.Warning(ex);
 
-            var error = ConvertToError(ex);
-
-            if(error.Exception!=null && !ReferenceEquals(ex,error.Exception))
-                Logger.Warning(error.Exception);
-            else if(!string.IsNullOrWhiteSpace(error.ErrorMessage))
-                Logger.Warning(error.ErrorMessage);
-            
-            Invoke(OnError, error);
+            Invoke(OnError, ex);
         }
 
 
-        /// <summary>
-        /// Converts to error.
-        /// </summary>
-        /// <param name="ex">The ex.</param>
-        /// <returns></returns>
-        protected virtual ErrorDTO ConvertToError(Exception ex)
-        {
-            return new ErrorDTO
-            {
-                Exception = ex
-            };
-        }
-
-
+    
         /// <summary>
         /// Invokes the specified dispatcher.
         /// </summary>

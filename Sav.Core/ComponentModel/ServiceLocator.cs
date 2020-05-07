@@ -5,7 +5,7 @@ namespace Savchin.ComponentModel
 {
     public static class ServiceLocator
     {
-        private static IContainer _container;
+        public static IContainer _container;
 
         /// <summary>
         /// Gets the specified value.

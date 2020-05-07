@@ -83,10 +83,7 @@ namespace Savchin.Services.Storage
 
         private static string SettingsPath(Assembly assembly)
         {
-            if (ConfigurationManager.AppSettings.Get("Portable") == "True")
-            {
-                return Path.GetDirectoryName(assembly.Location);
-            }
+
 
             var curAssembly = assembly ?? DefaultAssembly;
             var companyAttr = curAssembly.GetAttribute<AssemblyCompanyAttribute>();

@@ -103,7 +103,6 @@ namespace Savchin.Services.Localization
             {
                 var waitTask = new WaitTask(Logger)
                 {
-                    OnError = errorDto => Logger.Warning("Exception during localization changing " + errorDto.Exception),
                     Handlers = localizationChangingArgs.WaitingFor.ToArray(),
                     OnResult = result => { SetCurrentLanguage(language); }
                 };

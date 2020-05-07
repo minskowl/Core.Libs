@@ -35,8 +35,7 @@ namespace Savchin.Services.Localization
                     throw new ArgumentNullException(nameof(value));
 
                 LocalizationHelper.CurrentProvider = _currentProvider = value;
-                FlowDirection = value.FlowDirection;
-                OnPropertyChanged(nameof(CurrentProvider), nameof(Resources), nameof(FlowDirection));
+                OnPropertyChanged(nameof(CurrentProvider), nameof(Resources));
             }
         }
         
@@ -45,11 +44,6 @@ namespace Savchin.Services.Localization
         /// </summary>
         /// <value>The resources.</value>
         public object Resources => CurrentProvider.Resources;
-        
-        /// <summary>
-        /// Gets the flow direction.
-        /// </summary>
-        public FlowDirection FlowDirection { get; private set; }
 
         // ReSharper restore MemberCanBePrivate.Global
 

@@ -38,7 +38,7 @@ namespace Savchin.Services.Logging
         public bool IsFatalEnabled => Logger.IsEnabledFor(_levelFatal);
 
 
-        public LoggerBase(string name)
+        public LoggerBase(Type name)
         {
             log = LogManager.GetLogger(name);
             Logger = log.Logger;
