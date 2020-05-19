@@ -6,13 +6,14 @@
     <Version>1.0.1</Version>
   </PropertyGroup>
 
+
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <OutputPath>..\Release</OutputPath>
   </PropertyGroup>
 
 <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0'">
-	 <PackageReference Include="Microsoft.Win32.Registry" Version="4.7.0" />
-	 <PackageReference Include="System.ComponentModel.Annotations" Version="4.3.0" />
+	<PackageReference Include="Microsoft.Win32.Registry" Version="4.7.0" />
+	<PackageReference Include="System.ComponentModel.Annotations" Version="4.3.0" />
     <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
     <PackageReference Include="System.IO.FileSystem.AccessControl" Version="4.7.0" />
     <PackageReference Include="System.Management" Version="4.7.0" />
@@ -20,7 +21,15 @@
 	<PackageReference Include="LightInject" Version="6.3.2" />
     <PackageReference Include="log4net" Version="2.0.8" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-
+    <COMReference Include="NetFwTypeLib">
+      <Guid>{58FBCF7C-E7A9-467C-80B3-FC65E8FCCA08}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
 </ItemGroup>
 
 <ItemGroup Condition=" '$(TargetFramework)' == 'net45' ">		
@@ -34,7 +43,15 @@
 	<PackageReference Include="LightInject" Version="6.3.2" />
     <PackageReference Include="log4net" Version="2.0.8" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-
+    <COMReference Include="NetFwTypeLib">
+      <Guid>{58FBCF7C-E7A9-467C-80B3-FC65E8FCCA08}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
 </ItemGroup>
 
 <ItemGroup Condition=" '$(TargetFramework)' == 'net30' ">		
@@ -45,6 +62,15 @@
 	<Reference Include="System.Drawing" />
 	<Reference Include="System.ComponentModel.DataAnnotations" />
 	<Reference Include="System.Management" />
+	<COMReference Include="NetFwTypeLib">
+      <Guid>{58FBCF7C-E7A9-467C-80B3-FC65E8FCCA08}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
 </ItemGroup>
 
 
