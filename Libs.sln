@@ -5,13 +5,6 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{94E5F457-3256-49EF-A74F-E434AE314E7A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AE13D178-683C-4136-A0CA-4823906B5BFE}"
-	ProjectSection(SolutionItems) = preProject
-		build.bat = build.bat
-		default.build = default.build
-		publish.bat = publish.bat
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolsTest", "ToolsTest\ToolsTest.csproj", "{7E30DBBF-F9C2-408A-9098-23185570E810}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Savchin.Tools", "Tools\Savchin.Tools.csproj", "{2F1807E4-39A2-4F38-ADFC-6310A8443D90}"
@@ -30,7 +23,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sav.WinApi", "Sav.WinApi\Sa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sav.Forms", "Sav.Forms\Sav.Forms.csproj", "{98AC2BED-80A3-49EA-A4B1-A67B44B7DAF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sav.Services", "Sav.Services\Sav.Services.csproj", "{8E64D97F-CC8A-44B5-9623-0A5FD0169DE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sav.Services", "Sav.Services\Sav.Services.csproj", "{8E64D97F-CC8A-44B5-9623-0A5FD0169DE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

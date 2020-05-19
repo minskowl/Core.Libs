@@ -73,8 +73,6 @@
     </COMReference>
 </ItemGroup>
 
-
-
   <ItemGroup>
     <Compile Update="Validation\Resources.Designer.cs">
       <DependentUpon>Resources.resx</DependentUpon>

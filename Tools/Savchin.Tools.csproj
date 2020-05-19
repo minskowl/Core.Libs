@@ -181,6 +181,9 @@
     </Compile>
     <Compile Include="Mp3\Mp3Tool.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TimeManagment\TimeZoneCollection.cs" />
+    <Compile Include="TimeManagment\TimeZoneManager.cs" />
+    <Compile Include="TimeManagment\UITimeZone.cs" />
     <Compile Include="Xml\AssemblyGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
